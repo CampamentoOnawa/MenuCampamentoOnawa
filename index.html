@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú — Campamento Onawa</title>
+  <meta name="description" content="Menú del día de Campamento Onawa. Villa del Carbón, Estado de México.">
+  <meta name="theme-color" content="#1a2e24">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1a2e24', light: '#2d4a3a', dark: '#0f1c16' },
+            beige: { warm: '#ddd4c4' },
+            bone: '#f7f4ef',
+            gold: { DEFAULT: '#c4a574', soft: '#d4bc8e' },
+            charcoal: '#1c1c1c',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 8px 40px -12px rgba(26, 46, 36, 0.1)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="texture-grain font-sans text-charcoal bg-bone antialiased">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" aria-label="Campamento Onawa">
+    <div class="hero__media" id="hero-parallax">
+      <img
+        src="assets/RestauranteOnawaNoche.webp"
+        alt=""
+        class="hero__img"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+      >
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__kicker hero-anim">Menú del día</p>
+      <h1 class="hero__title hero-anim hero-anim-d1">Campamento Onawa</h1>
+      <p class="hero__tagline hero-anim hero-anim-d2">
+        Naturaleza, aventura y exclusividad<br>
+        en el corazón del bosque.
+      </p>
+      <div class="hero__divider hero-anim hero-anim-d3" aria-hidden="true"></div>
+      <p class="hero__location hero-anim hero-anim-d3">
+        Villa del Carbón, Estado de México
+      </p>
+      <a href="#menu" class="hero__cta hero-anim hero-anim-d4">Ver menú</a>
+    </div>
+
+    <a href="#menu" class="hero__scroll" aria-label="Ir al menú">
+      <span class="hero__scroll-text">Menú</span>
+      <span class="hero__scroll-line scroll-indicator-line"></span>
+    </a>
+  </section>
+
+  <!-- ═══ MENÚ ═══ -->
+  <main id="menu" class="menu">
+    <header class="menu-header reveal">
+      <p class="menu-header__label">Campamento Onawa</p>
+      <h2 class="menu-header__title">Menú del día</h2>
+      <div class="menu-header__rule" aria-hidden="true"></div>
+      <p class="menu-header__package">
+        <span class="menu-header__price">$200</span>
+        <span class="menu-header__package-detail">por persona · entrada, plato fuerte, postre y bebida</span>
+      </p>
+    </header>
+
+    <div class="menu-body">
+
+      <!-- Entradas -->
+      <section class="menu-category" aria-labelledby="cat-entradas">
+        <h3 id="cat-entradas" class="category-title reveal">Entradas</h3>
+        <div class="dishes-grid dishes-grid--2">
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Espagueti.jpeg" alt="Espagueti" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Espagueti</h4>
+                <span class="dish-card__price">$50</span>
+              </div>
+              <p class="dish-card__desc">Pasta al dente en salsa de tomate asado y hierbas del huerto.</p>
+              <p class="dish-card__ingredients">Tomate · Albahaca · Parmesano</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+                <span class="tag-pill tag-pill--muted">Recomendado</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Consome de Pollo.jpeg" alt="Consomé de pollo" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Consomé de pollo</h4>
+                <span class="dish-card__price">$50</span>
+              </div>
+              <p class="dish-card__desc">Caldo a fuego lento con pollo deshebrado y verduras de temporada.</p>
+              <p class="dish-card__ingredients">Pollo · Cebolla · Cilantro · Limón</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+                <span class="tag-pill tag-pill--gold">Favorito</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Platos fuertes -->
+      <section class="menu-category" aria-labelledby="cat-fuertes">
+        <h3 id="cat-fuertes" class="category-title reveal">Platos fuertes</h3>
+        <div class="dishes-grid dishes-grid--3">
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Barbacoa.jpeg" alt="Barbacoa" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Barbacoa</h4>
+                <span class="dish-card__price">$90</span>
+              </div>
+              <p class="dish-card__desc">Carne de res en adobo de chiles, con consomé de cocción.</p>
+              <p class="dish-card__ingredients">Res · Chile ancho · Aguacate · Cebolla</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+                <span class="tag-pill tag-pill--gold">Favorito</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Pozole Rojo.jpeg" alt="Pozole rojo" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Pozole rojo</h4>
+                <span class="dish-card__price">$90</span>
+              </div>
+              <p class="dish-card__desc">Maíz en caldo rojo de chile guajillo con carne y guarniciones.</p>
+              <p class="dish-card__ingredients">Maíz · Chile guajillo · Lechuga · Orégano</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+                <span class="tag-pill tag-pill--spice">Picante</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-2">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Quesadilla.jpeg" alt="Chiles rellenos" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Chiles rellenos</h4>
+                <span class="dish-card__price">$90</span>
+              </div>
+              <p class="dish-card__desc">Poblano relleno de queso fundido con salsa de tomate casera.</p>
+              <p class="dish-card__ingredients">Chile poblano · Quesillo · Tomate · Crema</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Postres -->
+      <section class="menu-category" aria-labelledby="cat-postres">
+        <h3 id="cat-postres" class="category-title reveal">Postres</h3>
+        <div class="dishes-grid dishes-grid--2">
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Pastel.jpeg" alt="Pastel de chocolate" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Pastel de chocolate</h4>
+                <span class="dish-card__price">$40</span>
+              </div>
+              <p class="dish-card__desc">Bizcocho de cacao intenso con crema suave y fruta de temporada.</p>
+              <p class="dish-card__ingredients">Cacao · Mantequilla · Fruta fresca</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill tag-pill--gold">Favorito</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Pay de Mermelada de Fresa.jpeg" alt="Cheesecake" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Cheesecake</h4>
+                <span class="dish-card__price">$40</span>
+              </div>
+              <p class="dish-card__desc">Crema de queso sobre base crujiente con frutos rojos locales.</p>
+              <p class="dish-card__ingredients">Queso crema · Galleta · Frutos rojos</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill tag-pill--muted">Recomendado</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Bebidas -->
+      <section class="menu-category menu-category--last" aria-labelledby="cat-bebidas">
+        <h3 id="cat-bebidas" class="category-title reveal">Bebidas</h3>
+        <div class="dishes-grid dishes-grid--2">
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/Menu/Cafe.jpeg" alt="Café de olla" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Café de olla</h4>
+                <span class="dish-card__price">$40</span>
+              </div>
+              <p class="dish-card__desc">Infusión con piloncillo y canela, al estilo de la sierra.</p>
+              <p class="dish-card__ingredients">Café · Piloncillo · Canela</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill">Tradicional</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__media">
+              <img src="assets/Menu/AguaFresca.jpg" alt="Agua del día" class="dish-img" loading="lazy" width="800" height="600">
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__head">
+                <h4 class="dish-card__name">Agua del día</h4>
+                <span class="dish-card__price">$35</span>
+              </div>
+              <p class="dish-card__desc">Agua fresca de fruta de temporada, preparada al momento.</p>
+              <p class="dish-card__ingredients">Fruta de estación · Agua natural</p>
+              <div class="dish-card__tags">
+                <span class="tag-pill tag-pill--muted">Recomendado</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <img src="assets/LogoCampamentoOnawa.webp" alt="" class="site-footer__logo" width="48" height="48" loading="lazy">
+    <p class="site-footer__name">Campamento Onawa</p>
+    <p class="site-footer__loc">Villa del Carbón, Estado de México</p>
+    <div class="site-footer__links">
+      <a href="https://wa.me/521234567890?text=Hola%20Campamento%20Onawa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <span class="site-footer__dot" aria-hidden="true">·</span>
+      <a href="https://instagram.com/campamentoonawa" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+    <p class="site-footer__copy">© <span id="year"></span> Campamento Onawa</p>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/521234567890?text=Hola%20Campamento%20Onawa!%20Vi%20el%20menú."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="wa-fab"
+    aria-label="Contactar por WhatsApp"
+  >
+    <svg class="wa-fab__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -32px 0px' });
+    revealEls.forEach((el) => revealObs.observe(el));
+
+    const heroParallax = document.getElementById('hero-parallax');
+    if (heroParallax && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      window.addEventListener('scroll', () => {
+        heroParallax.style.transform = `translate3d(0, ${window.scrollY * 0.18}px, 0)`;
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>
